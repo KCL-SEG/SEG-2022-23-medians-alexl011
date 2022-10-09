@@ -10,3 +10,12 @@ while True:
     else:
         break
 print(numbers)
+
+length = len(numbers)
+index = int(length/2)
+if len(numbers) % 2 ==0:
+    median = numbers[index] + numbers[index -1]
+    median = median/2
+else:
+    median = numbers[index]
+print(median)
